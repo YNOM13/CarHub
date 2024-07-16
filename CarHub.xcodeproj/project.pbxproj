@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5383DB65BF681451E82363B6 /* Pods_CarHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6322427998E270AA65AC7 /* Pods_CarHub.framework */; };
 		CE38DEC72C46F3C200B495CA /* CarHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE38DEC62C46F3C200B495CA /* CarHubApp.swift */; };
 		CE38DEC92C46F3C200B495CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE38DEC82C46F3C200B495CA /* ContentView.swift */; };
 		CE38DECB2C46F3C400B495CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE38DECA2C46F3C400B495CA /* Assets.xcassets */; };
 		CE38DECE2C46F3C400B495CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE38DECD2C46F3C400B495CA /* Preview Assets.xcassets */; };
+		CE38DED52C46F88D00B495CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE38DED42C46F88D00B495CA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CA6322427998E270AA65AC7 /* Pods_CarHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E9214BFD294775421BFB541 /* Pods-CarHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarHub.release.xcconfig"; path = "Target Support Files/Pods-CarHub/Pods-CarHub.release.xcconfig"; sourceTree = "<group>"; };
+		63B0826BD26C69DF51177E12 /* Pods-CarHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarHub.debug.xcconfig"; path = "Target Support Files/Pods-CarHub/Pods-CarHub.debug.xcconfig"; sourceTree = "<group>"; };
 		CE38DEC32C46F3C200B495CA /* CarHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE38DEC62C46F3C200B495CA /* CarHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarHubApp.swift; sourceTree = "<group>"; };
 		CE38DEC82C46F3C200B495CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE38DECA2C46F3C400B495CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE38DECD2C46F3C400B495CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE38DED42C46F88D00B495CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +32,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5383DB65BF681451E82363B6 /* Pods_CarHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59575C4450F6C790B74614E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63B0826BD26C69DF51177E12 /* Pods-CarHub.debug.xcconfig */,
+				4E9214BFD294775421BFB541 /* Pods-CarHub.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5C3BEA114D798F5631A202FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CA6322427998E270AA65AC7 /* Pods_CarHub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE38DEBA2C46F3C200B495CA = {
 			isa = PBXGroup;
 			children = (
 				CE38DEC52C46F3C200B495CA /* CarHub */,
 				CE38DEC42C46F3C200B495CA /* Products */,
+				59575C4450F6C790B74614E7 /* Pods */,
+				5C3BEA114D798F5631A202FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 				CE38DEC62C46F3C200B495CA /* CarHubApp.swift */,
 				CE38DEC82C46F3C200B495CA /* ContentView.swift */,
 				CE38DECA2C46F3C400B495CA /* Assets.xcassets */,
+				CE38DED42C46F88D00B495CA /* GoogleService-Info.plist */,
 				CE38DECC2C46F3C400B495CA /* Preview Content */,
 			);
 			path = CarHub;
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE38DED12C46F3C400B495CA /* Build configuration list for PBXNativeTarget "CarHub" */;
 			buildPhases = (
+				61CB60A8C5C65D31A01A424C /* [CP] Check Pods Manifest.lock */,
 				CE38DEBF2C46F3C200B495CA /* Sources */,
 				CE38DEC02C46F3C200B495CA /* Frameworks */,
 				CE38DEC12C46F3C200B495CA /* Resources */,
+				03791C8E7CDB646BF4FD1695 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,10 +156,53 @@
 			files = (
 				CE38DECE2C46F3C400B495CA /* Preview Assets.xcassets in Resources */,
 				CE38DECB2C46F3C400B495CA /* Assets.xcassets in Resources */,
+				CE38DED52C46F88D00B495CA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03791C8E7CDB646BF4FD1695 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarHub/Pods-CarHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarHub/Pods-CarHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarHub/Pods-CarHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61CB60A8C5C65D31A01A424C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE38DEBF2C46F3C200B495CA /* Sources */ = {
@@ -182,7 +254,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -245,7 +317,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -266,6 +338,7 @@
 		};
 		CE38DED22C46F3C400B495CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B0826BD26C69DF51177E12 /* Pods-CarHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -275,11 +348,11 @@
 				DEVELOPMENT_TEAM = V9HJ4JCC4T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CarHub;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +360,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = yardev.com.CarHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,6 +372,7 @@
 		};
 		CE38DED32C46F3C400B495CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E9214BFD294775421BFB541 /* Pods-CarHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,11 +382,11 @@
 				DEVELOPMENT_TEAM = V9HJ4JCC4T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CarHub;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +394,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = yardev.com.CarHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
